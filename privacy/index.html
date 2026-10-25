@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hermès — politique de confidentialité</title>
+<style>
+  body { font-family: -apple-system, "Segoe UI", Roboto, sans-serif; line-height: 1.65;
+         max-width: 720px; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; color: #1f2430; }
+  h1 { font-size: 1.5rem; margin-bottom: .25rem; }
+  h2 { font-size: 1.1rem; margin-top: 2rem; }
+  p, li { font-size: .98rem; }
+  .badge { display: inline-block; font-size: .8rem; color: #556;
+           border: 1px solid #ccd; border-radius: 99px; padding: .1rem .7rem; margin-bottom: 1rem; }
+  footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #dde;
+           font-size: .85rem; color: #667; }
+  a { color: #2456c4; }
+  code { background: #f2f4f8; border-radius: 4px; padding: .05rem .35rem; font-size: .9em; }
+</style>
+</head>
+<body>
+
+<span class="badge">Politique de confidentialité — dernière mise à jour : 25 octobre 2026</span>
+
+<h1>Politique de confidentialité — Hermès</h1>
+
+<p>Hermès est une <strong>application personnelle de bureau</strong>, installée sur
+l'ordinateur de son unique utilisateur. Elle n'a ni serveur, ni base de données
+distante, ni compte d'utilisateur : cette page décrit exactement ce qu'elle fait
+des données accessibles via les API Google, dans le respect des
+<a href="https://developers.google.com/terms/api-services-user-data-policy"> exigences
+Google relatives aux données utilisateur des API</a> (notamment la clause
+d'usage limité).</p>
+
+<h2>1. Quelles données Google sont accédées</h2>
+<ul>
+  <li><strong>Google Tasks</strong> (portée <code>tasks</code>) : les listes de
+      tâches du compte autorisé, lues et écrites pour synchroniser le fichier de
+      tâches local de l'utilisateur.</li>
+  <li><strong>Gmail</strong> (portée <code>gmail.readonly</code>) : les métadonnées
+      et contenus des messages du compte autorisé, <em>lus uniquement</em>, à la
+      demande explicite de l'utilisateur (par exemple pour préparer une réponse).</li>
+</ul>
+<p>Aucune autre API Google n'est utilisée. Aucune donnée de contacts, de Drive,
+d'agenda ou de photos n'est demandée.</p>
+
+<h2>2. Comment ces données sont utilisées</h2>
+<ul>
+  <li>Les tâches sont lues et écrites <strong>uniquement</strong> pour maintenir
+      la synchronisation entre le compte Google de l'utilisateur et son fichier
+      de tâches local.</li>
+  <li>Les messages Gmail sont lus <strong>uniquement</strong> pour être présentés
+      à l'utilisateur, sur demande de celui-ci. Rien n'est envoyé, supprimé ou
+      modifié dans Gmail.</li>
+  <li>Les traitements (analyse, résumé, classement) sont exécutés
+      <strong>localement</strong> sur la machine de l'utilisateur, à la demande
+      de celui-ci. Aucune donnée Google n'est publiée ni partagée.</li>
+</ul>
+
+<h2>3. Où les données sont stockées</h2>
+<ul>
+  <li>Les données manipulées (listes de tâches, extraits de messages) restent dans
+      des fichiers <strong>locaux</strong> sur l'ordinateur de l'utilisateur.</li>
+  <li>Le jeton d'accès autorisant l'application est stocké localement également
+      (fichier de jetons du répertoire personnel de l'utilisateur). Il n'est
+      jamais transmis à un tiers.</li>
+</ul>
+
+<h2>4. Ce qui n'est jamais fait</h2>
+<ul>
+  <li>Pas de transfert de données Google à des tiers, ni à un service d'analyse,
+      ni à de la publicité, ni à un modèle d'IA hébergé.</li>
+  <li>Pas de vente de données, pas d'exploitation commerciale.</li>
+  <li>Pas de lecture de comptes autres que celui explicitement autorisé par
+      l'utilisateur au moment du consentement.</li>
+  <li>Pas d'utilisation des données pour entraîner des modèles d'apprentissage
+      automatique, généralisés ou non.</li>
+</ul>
+
+<h2>5. Combien de temps les données sont conservées</h2>
+<p>Les fichiers locaux ne survivent pas à leur utilité : l'utilisateur les
+supprime comme n'importe quel fichier personnel. La suppression du jeton local
+met fin définitivement à tout accès.</p>
+
+<h2>6. Comment révoquer l'accès</h2>
+<ul>
+  <li>Côté Google : <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>
+      → sélectionner « Hermès » → « Supprimer l'accès ». Effectif immédiat.</li>
+  <li>Côté local : supprimer le fichier de jetons du répertoire personnel.</li>
+</ul>
+
+<h2>7. Contact</h2>
+<p><a href="mailto:basile.mart@gmail.com">basile.mart@gmail.com</a> — le
+propriétaire de l'application est également son unique utilisateur.</p>
+
+<footer>
+  <a href="/">← Retour à la page d'accueil</a>
+</footer>
+
+</body>
+</html>

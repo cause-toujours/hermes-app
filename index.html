@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hermès — assistant personnel</title>
+<style>
+  body { font-family: -apple-system, "Segoe UI", Roboto, sans-serif; line-height: 1.65;
+         max-width: 720px; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; color: #1f2430; }
+  h1 { font-size: 1.6rem; margin-bottom: .25rem; }
+  h2 { font-size: 1.1rem; margin-top: 2rem; }
+  p, li { font-size: .98rem; }
+  .badge { display: inline-block; font-size: .8rem; color: #556;
+           border: 1px solid #ccd; border-radius: 99px; padding: .1rem .7rem; margin-bottom: 1rem; }
+  footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #dde;
+           font-size: .85rem; color: #667; }
+  a { color: #2456c4; }
+  code { background: #f2f4f8; border-radius: 4px; padding: .05rem .35rem; font-size: .9em; }
+</style>
+</head>
+<body>
+
+<span class="badge">Application personnelle — usage strictement privé</span>
+
+<h1>Hermès</h1>
+<p><em>Hermès</em> est l'assistant personnel de son unique utilisateur : un logiciel
+qui tourne <strong>en local, sur son propre ordinateur</strong>, et l'aide à gérer
+son travail quotidien (recherche, notes, tâches, correspondance).</p>
+
+<h2>Ce que l'application fait avec Google</h2>
+<ul>
+  <li><strong>Google Tasks</strong> — synchroniser la liste de tâches personnelle
+      entre l'ordinateur de l'utilisateur et son compte Google
+      (portées demandées : <code>tasks</code>).</li>
+  <li><strong>Gmail</strong> — consulter les messages et leurs libellés pour
+      les présenter à l'utilisateur, sur demande explicite de celui-ci
+      (portée demandée : <code>gmail.readonly</code>).</li>
+</ul>
+
+<h2>Ce que l'application ne fait pas</h2>
+<ul>
+  <li>Aucun autre utilisateur ne peut s'y connecter : l'application est configurée
+      pour <strong>un seul compte</strong>, celui de son propriétaire.</li>
+  <li>Aucune donnée n'est collectée, revendue ou transmise à des tiers :
+      il n'y a <strong>aucun serveur</strong> — tout se passe sur la machine de
+      l'utilisateur.</li>
+  <li>Aucune action n'est envoyée sur les comptes d'autres personnes.</li>
+</ul>
+
+<p>Le détail du traitement des données Google figure dans la
+<a href="privacy/">politique de confidentialité</a>.</p>
+
+<footer>
+  Contact : <a href="mailto:basile.mart@gmail.com">basile.mart@gmail.com</a><br>
+  Application de type « bureau » (desktop), sans site de production —
+  cette page sert uniquement de page d'accueil publique exigée par
+  l'écran de consentement Google.
+</footer>
+
+</body>
+</html>
